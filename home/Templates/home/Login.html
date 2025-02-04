@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static '/css/StyleLogin.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-toggle">
+                <button id="login-toggle" class="active">Connexion</button>
+                <button id="signup-toggle">Inscription</button>
+            </div>
+            
+            <form id="login-form" class="form" method="post" action="{% url 'login_view' %}">
+                {% csrf_token %}
+                <h2>Connexion</h2>
+                <input type="hidden" name="form_type" value="login">
+                {{ login_form.as_p }}
+                <button type="submit">Se connecter</button>
+                <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+            </form>
+
+            <form id="signup-form" class="form hidden" method="post" action="{% url 'login_view' %}">
+                {% csrf_token %}
+                <h2>Inscription</h2>
+                <input type="hidden" name="form_type" value="signup">
+                {{ login_form.as_p }}
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+    </div>
+    <script src="{% static '/Js/Login.js' %}"></script>
+</body>
+</html>

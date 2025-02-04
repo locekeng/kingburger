@@ -1,0 +1,167 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/css/Style.css' %}">
+    
+    <script src="https://kit.fontawesome.com/5c9052e016.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="menu">
+            <img src="/static/Assets/images/menu.png" alt="menu-icon" class="menu-icon">
+            <ul>
+                <li><a href="">Notre carte </a></li>
+                <li><a href="">Le coin famille</a></li>
+                <li><a href="">Rencontrez nous </a></li>
+                <li><a href="">Burger kara</a></li>
+            </ul>
+        </div>
+        <img src="/static/Assets/images/burger-king.png" alt="" class="logo">
+        <div class="header-end">
+            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-solid fa-crown">
+                <div class="login">
+                    <button><span><a href="{% url 'login_view' %}">Se connecter</a></span></button>
+                    <hr>
+                    <p>Vous n'avez pas encore de compte ?</p>
+                    <button><span>rejoignez le kingdom</span></button>
+                </div>
+            </i>
+            <button><span>Click & collect</span><img src="/static/Assets/images/click_collect.png"></button>
+        </div>
+    </header>
+   <!-- header -->
+
+   <!-- home -->
+    <section class="home">
+        <button><span>decouvrez-le!</span></button>
+    </section>
+   <!-- home -->
+
+   <!-- foods -->
+    <section class="foods">
+        <h1>Chaud bouillant</h1>
+        <p>Decouvrez les actualites Burger King</p>
+        <div class="foods-list">
+            <div class="box">
+                <img src="/static/Assets/images/img2.webp">
+                <h3>desert glaces</h3>
+            </div>
+            <div class="box">
+                <img src="/static/Assets/images/img3.webp">
+                <h3>En savoir plus</h3>
+            </div>
+            <div class="box">
+                <img src="/static/Assets/images/img4.webp">
+                <h3>en ce momoent</h3>
+            </div>
+        </div>
+    </section>
+   <!-- foods -->
+
+   <!-- fidelity prog -->
+    <section class="fidelity-prog">
+        <div class="div1">
+            <img src="/static/Assets/images/img5.png">
+            <button><span>rejoindre</span></button>
+        </div>
+        <div class="div2">
+            <img src="/static/Assets/images/img6.png">
+
+        </div>
+        <div class="div3">
+            <img src="/static/Assets/images/img7.png">
+            <button><span>Voir tous les avantages</span></button>
+        </div>
+    </section>
+   <!-- fidelity prog -->
+
+   <!-- little food -->
+    <section class="littlr-food">
+        <h1>une petite ou grosse faim? 🍔</h1>
+        <div class="little-food-box">
+            <div class="box">
+                <h3>king nuggets</h3>
+                <img src="/static/Assets/images/img9.webp">
+            </div>
+            <div class="box">
+                <h3>king fusion lion</h3>
+                <img src="/static/Assets/images/img10.webp">
+            </div>
+            <div class="box">
+                <h3>chicken louisiane <br>steakhouse</h3>
+                <img src="/static/Assets/images/img11.webp">
+            </div>
+            <div class="box">
+                <h3>double steakhouse</h3>
+                <img src="/static/Assets/images/img12.webp">
+            </div>
+        </div>
+    </section> 
+   <!-- little food -->
+
+   <!-- footer -->
+    <footer>
+        <div class="div1">
+            <p>Qui nous aimes nous suives !</p>
+            <div class="icon-social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <p>king dans votre poche</p>
+            <div>
+                <img src="/static/Assets/images/app_store.png">
+                <img src="/static/Assets/images/play_store.png">
+            </div>
+
+        </div>
+        <hr>
+        <div class="div2">
+            <div>
+                <h3>produit</h3>
+                <ul>
+                    <a href="">Catalogue produit</a>
+                    <a href="">Nos burger</a>
+                    <a href="">Nos menu</a>
+                </ul>
+            </div>
+            <div>
+                <h3>Famille</h3>
+                <ul>
+                    <a href="">Catalogue produit</a>
+                    <a href="">Nos burger</a>
+                    <a href="">Nos menu</a>
+                </ul>
+            </div>
+            <div>
+                <h3>Services connectes</h3>
+                <ul>
+                    <a href="">Catalogue produit</a>
+                    <a href="">Nos burger</a>
+                    <a href="">Nos menu</a>
+                </ul>
+            </div>
+            <div>
+                <h3>Informations legales</h3>
+                <ul>
+                    <a href="">Catalogue produit</a>
+                    <a href="">Nos burger</a>
+                    <a href="">Nos menu</a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="div3">
+            <p>Pour votre sante mangez cinq fruits et legumes par jour. www.mangezbouger.fr</p>
+            <p>&copy;2024</p>
+        </div>
+    </footer>
+   <!-- footer -->
+</body>
+</html>
